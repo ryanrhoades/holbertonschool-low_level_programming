@@ -6,14 +6,13 @@
   *
   * Return: 1 if character is lowercase, 0 otherwise
   */
-#include "main.h"
 int _islower(int c)
 {
-	if (c >= 'a' && c <='z')
+	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
-	else
 	}
+		else
 
 		return (0);
 }
