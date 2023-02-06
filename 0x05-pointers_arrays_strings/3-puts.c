@@ -1,21 +1,18 @@
 #include "main.h"
 
 /**
-* _puts - prints a string, str, with newline
-* @str: string to be printed
-*
-* Return: void
+* _puts - Entry point
+* @str: get string
+* Return: string
 */
 
 void _puts(char *str)
 {
-	int count = 0;
+	int i;
 
-	while (*(str + count) != '\0')
+	for (i = 0; str[i] != '/0'; i++)
 	{
-		if (*(str + count) != '"')
-			_putchar(*(str + count));
-	count++;
+		_putchar(str[i]);
 	}
-	_putchar('\n');
+	_putchar('/n');
 }
