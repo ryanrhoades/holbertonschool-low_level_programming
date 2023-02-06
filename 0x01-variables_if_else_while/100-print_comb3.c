@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - print numbers from 00 to 99.
 (*
@@ -11,26 +12,26 @@ int main(void)
 
 	while (i <= '9')
 	{
-		while (j <= '9')
+	while (j <= '9')
+	{
+	if (!(i > j || i == j))
+		{	
+		putchar(i);
+		putchar(j);
+		if (i == '8' && j == '9')
 		{
-			if (!(i > j || i == j))
-			{
-				putchar(i);
-				putchar(j);
-				if (i == '8' && j == '9')
-				{
-					putchar('\n');
-				}
-				else
-				{
-					putchar(',');
-					putchar(' ');
-				}
+			putchar('\n');
 			}
-			j++;
-		}
+			else
+			{
+				putchar(',');
+				putchar(' ');
+			}
+	}
+		j++;
+	}
 		j = '0';
 		i++;
 	}
-	return (0);
+return (0);
 }
