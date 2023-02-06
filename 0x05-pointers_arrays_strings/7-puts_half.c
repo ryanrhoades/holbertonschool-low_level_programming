@@ -3,7 +3,6 @@
 /**
  * puts_half - Entry point
  * @str: get string
- * Return: if string is odd return return
  */
 
 void puts_half(char *str)
