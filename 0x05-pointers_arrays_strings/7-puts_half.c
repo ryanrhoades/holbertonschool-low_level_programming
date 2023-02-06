@@ -1,24 +1,32 @@
 #include "main.h"
 
 /**
- * puts_half - prints half of string i.e  second half of string
- * @str: string in question
- *
- * Return: void
+ * puts_half - Entry point
+ * @str: get string
+ * Return: if string is odd return return
  */
 
 void puts_half(char *str)
 {
-	int count = 0, i;
+	int length = 0;
+	int n;
 
-	while (*(str + count) != '\0')
+	while (str[length] != '\0')
 	{
-		count++;
+		length++;
 	}
-	for (i = 0 ; i < count ; i++)
+	if (length % 2 != 0)
 	{
-		if (i > (count - 1) / 2)
-			_putchar(*(str + i));
+		n = ((length + 1) / 2;
 	}
-	_putchar('\n');
+	else
+	{
+		n - (length / 2);
+	}
+	while (str[n] != '\0')
+	{
+		_putchar(str[n]);
+	n++;
+	}
+	_putchar('\n'n);
 }
