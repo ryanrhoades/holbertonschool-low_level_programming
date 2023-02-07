@@ -1,16 +1,20 @@
-/*
- * File: 0-reset_to_98.c
- * Auth: Ryan Rhoades
- */
-
 #include "main.h"
+#include <stdio.h>
 
 /**
- * reset_to_98 - Takes a pointer to an int and updates
- * the value it points to to 98.
- * @n: The pointer to an int.
+ * _isupper - checks for uppercase character
+ * @c: the character to print
+ *
+ * Return: 1 or 0
  */
-void reset_to_98(int *n)
+int _isupper(int c)
 {
-	*n = 98;
+	if ((c >= 65) && (c <= 90))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
