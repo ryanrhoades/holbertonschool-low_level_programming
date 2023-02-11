@@ -1,10 +1,9 @@
-#include "0-main.c"
-#include "main.h"
+#include "holberton.h"
 
 /**
  * _strcat - concatenates two strings
- * @dest: input parameter string
- * @src: input parameter string
+ * @dest: destination for final string
+ * @src: source of string
  *
  * Return: dest
  */
