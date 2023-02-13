@@ -1,22 +1,19 @@
 #include "holberton.h"
-#include "3-main.c"
 
 /**
- * _strcmp - compares two strings
- * @s1: input parameter
- * @s2: input parameter
- *
- * Return: 0 if equal or b if is different
+ * _strcmp - compares 2 strings
+ * @s1: container of string 1
+ * @s2: container of string 2
+ * Return: 0 if strings are the same
  */
+
 int _strcmp(char *s1, char *s2)
 {
-	int a = 0;
-	int b = 0;
-
-	while (s1[a] != '\0' && b == 0)
+	while (*s1 && *s2 && *s1 == *s2)
 	{
-		b = s1[a] - s2[a];
-		a++;
+		s1++;
+		s2++;
 	}
-	return (b);
+
+	return (*s1 - *s2);
 }
