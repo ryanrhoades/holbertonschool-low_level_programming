@@ -1,27 +1,32 @@
 #include "holberton.h"
 
 /**
- * _strncat - adds a string to a string
- * @dest: destination for the final string
- * @src: source string
- * @n: number of bytes from src to be placed in dest
- * Return: compounded string inside dest
+ * _strncpy - copys a string
+ * @dest: destination of string
+ * @src: source of string
+ * @n: the number of chars to copy
+ * Return: the string
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int index = 0;
-	int dl = 0;
+	int sl = 0;
 
-	while (dest[dl])
+	while (src[index])
 	{
-		dl++;
-	}
-	for (index = 0; src[index] && index < n; index++)
-	{
-		dest[dl] = src[index];
-		dl++;
+		index++;
+		sl++;
 	}
 
+	for (index = 0; src[index] != '\0' && index < n; index++)
+	{
+		dest[index] = src[index];
+	}
+
+	for (index = sl; index < n; index++)
+	{
+		dest[index] = '\0';
+	}
 	return (dest);
 }
