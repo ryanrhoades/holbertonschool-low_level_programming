@@ -1,19 +1,27 @@
 #include "holberton.h"
-#include "1-main.c"
 
 /**
- * _strlen - Function that returns the length of a string
- *
- * @s: this is the input string
- *
- * Return: Lenngth of the string
- */
-int _strlen(char *s)
+* *_strncpy - Entry point
+* @dest: send result here
+* @src: get string
+* @n: number of characters to copy
+* Return: destination
+*/
+
+char *_strncpy(char *dest, char *src, int n)
 {
-	int index;
+	int i = 0;
 
-	for (index = 0; s[index] != '\0' ; index++)
-		;
-	return (index);
+	while (i < n && src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
+	return (dest);
 }
-
