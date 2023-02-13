@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include "7-main.c"
+
 
 /**
  * leet - encodes a string
