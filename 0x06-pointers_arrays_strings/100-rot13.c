@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include "100-main.c"
 
 /**
  * print_number - prints an integer
