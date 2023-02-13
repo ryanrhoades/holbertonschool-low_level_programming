@@ -1,32 +1,32 @@
 #include "holberton.h"
+
 /**
- * _strspn - gets the length of a prefix substring
- * @s: pointer to a string
- * @accept: pointer to a string
- *
- * Return: the number of bytes
- */
+  * _strspn - search a string for a set of bytes
+  * @s: source string
+  * @accept: accepted string
+  *
+  * Return: number of bytes in the init segment
+  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int count = 0;
-	int i = 0;
-	int j = 0;
+	unsigned int a = 0, b, t = 0;
 
-	while (s[i] != '\0')
+	while (accept[a])
 	{
-		while (accept[j] != '\0')
+		b = 0;
+
+		while (s[b] != 32)
 		{
-			if (accept[j] == s[i])
+			if (accept[a] == s[b])
 			{
-				count++;
+				t++;
 			}
-			j++;
+
+			b++;
 		}
-		j = 0;
-		i++;
-		if (s[i] == ' ')
-		{
-			break;
-		}
+
+		a++;
 	}
-	return (c
+
+	return (t);
+}
