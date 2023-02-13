@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include "1-main.c"
+
 /**
  * _strlen - Function that returns the length of a string
  *
